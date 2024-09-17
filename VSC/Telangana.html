@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telangana Tourist Places</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .content i {
+            margin-right: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .grid-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .grid-item p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" loop autoplay muted>
+        <source src="images/india.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Telangana Tourist Places</h1>
+    </header>
+    <div class="content">
+        <h2><i class="fas fa-map-marker-alt"></i>Telangana</h2>
+        <div class="grid-container">
+            <div class="grid-item" onclick="window.location.href='Charminar.html'">
+                <img src="https://www.abhibus.com/blog/wp-content/uploads/2023/03/charminar-hyderabad-entryfee-timings-tour-package-header-1.jpg" alt="Charminar">
+                <p>Charminar</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Warangal.html'">
+                <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/05/sri-v-temple1.jpg" alt="Warangal">
+                <p>Warangal</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Golconda Fort.html'">
+                <img src="https://assets-news.housing.com/news/wp-content/uploads/2020/11/02184143/Everything-you-need-to-know-about-Golconda-Fort-FB-1200x700-compressed.jpg" alt="Golconda Fort">
+                <p>Golconda Fort</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Ramoji Film City.html'">
+                <img src="https://etvbharatimages.akamaized.net/etvbharat/prod-images/08-06-2024/1200-675-21664910-thumbnail-16x9-ramoji-film-city-aspera.jpg" alt="Ramoji Film City">
+                <p>Ramoji Film City</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Bhadrachalam.html'">
+                <img src="https://www.holidify.com/images/bgImages/BHADRACHALAM.jpg" alt="Bhadrachalam">
+                <p>Bhadrachalam</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='wonderla.html'">
+                <img src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop/q_80,w_900,dpr_1,f_auto,fl_progressive,c_limit/wonderla-hyderabad/Sky_Wheel_k9epdj" alt="wonderla">
+                <p>wonderla</p>
+            </div>
+        </div>
+        <a class="back-button" href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+</body>
+</html>

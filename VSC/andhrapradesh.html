@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andhra Pradesh Tourist Places</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .content i {
+            margin-right: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .grid-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .grid-item p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" loop autoplay muted>
+        <source src="images/india.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Andhra Pradesh Tourist Places</h1>
+    </header>
+    <div class="content">
+        <h2><i class="fas fa-map-marker-alt"></i> Andhra Pradesh</h2>
+        <div class="grid-container">
+            <div class="grid-item" onclick="window.location.href='RK Beach.html'">
+                <img src="https://i.pinimg.com/736x/cf/af/9a/cfaf9adb45febf3f4bff55130510bb6b.jpg" alt="RK Beach">
+                <p>RK Beach</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='tirupati.html'">
+                <img src="https://balajimandirnerul.org/wp-content/uploads/2024/05/Gopuram-2.jpg" alt="Tirupati">
+                <p>Tirupati</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='arakuvalley.html'">
+                <img src="https://www.india.com/wp-content/uploads/2024/05/Borra-Caves-2.jpg" alt="Araku Valley">
+                <p>Araku Valley</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='vijayawada.html'">
+                <img src="https://i.pinimg.com/736x/53/9c/1d/539c1d29a8c141cbb43c9e16a99ff24c.jpg" alt="Godavari">
+                <p>Godavari</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='amaravati.html'">
+                <img src="https://lh5.googleusercontent.com/proxy/ZzD3Qt1TohgEIH1eYv-kkMSdqWYQKPqjR6EKMlniH3THrHTwcN2p1bthe6NxB4NBWoXfgnJGCisRV062-tVIqczcaXrF-J2k" alt="Amaravati">
+                <p>Amaravati</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='srisailam.html'">
+                <img src="https://img.freepik.com/free-photo/architecture-color-holy-beautiful-detail_1203-6106.jpg?t=st=1722013502~exp=1722017102~hmac=a5de21c5b8562fb395b97c295257fe5fc64250607d27cfc9c34c34b23a1b5942&w=996" alt="Srisailam">
+                <p>Srisailam</p>
+            </div>
+        </div>
+        <a class="back-button" href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+</body>
+</html>

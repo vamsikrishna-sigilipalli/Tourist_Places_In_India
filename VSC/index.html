@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places</title>
+    <!-- <link rel="stylesheet" href="txt.css"> -->
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h7 {
+  font-size: 50px;
+}
+
+.state-names {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+  h3 {
+  
+  font-size: 40px;
+}
+h4 {
+  font-size: 40px;
+}
+h5 {
+  font-size: 40px;
+}
+h6 {
+  font-size: 40px;
+}
+
+.states-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.state-category {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.state-category h3,
+.state-category h4,
+.state-category h5,
+.state-category h6 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.state-category ul {
+  list-style: none;
+}
+
+.state-category li {
+  margin-bottom: 5px;
+}
+
+.state-category a {
+  color: blue;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.state-category a:hover {
+  color: #ddd;
+}
+
+</style>
+<body>
+    <video id="background-video" loop autoplay muted>
+        <source src="images/india.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h7>WELCOME TO STATE WISE TOURIST PLACES IN INDIA</h7>
+       <br>
+    </br>
+        <p class="state-names">STATE NAMES</p>
+        <nav class="states-container">
+            <div class="state-category">
+                <h3 class="east">EAST</h3>
+                <ul>
+                   <h8><li><a href="West Bengal">West Bengal</a></li></h8>
+                    <li><a href="Bihar">Bihar</a></li>
+                    <li><a href="Jharkhand">Jharkhand</a></li>
+                    <li><a href="Sikkim">Sikkim</a></li>
+                    <li><a href="Odisha">Odisha</a></li>
+                    <li><a href="Arunachal Pradesh">Arunachal Pradesh</a></li>
+                    <li><a href="Assam">Assam</a></li>
+                    <li><a href="Nagaland">Nagaland</a></li>
+                    <li><a href="Manipur">Manipur</a></li>
+                    <li><a href="Mizoram">Mizoram</a></li>
+                    <li><a href="Tripura">Tripura</a></li>
+                </ul>
+            </div>
+            <div class="state-category">
+                <h4 class="west">WEST</h4>
+                <ul>
+                    <li><a href="Maharashtra.html">Maharashtra</a></li>
+                    <li><a href="Gujarat.html">Gujarat</a></li>
+                    <li><a href="Rajasthan.html">Rajasthan</a></li>
+                    <li><a href="Goa.html">Goa</a></li>
+                    <li><a href="Madhya Pradesh.html">Madhya Pradesh</a></li>
+                </ul>
+            </div>
+            <div class="state-category">
+                <h5 class="north">NORTH</h5>
+                <ul>
+                    <li><a href="Jammu Kashmir.html">Jammu Kashmir</a></li>
+                    <li><a href="Himachal Pradesh.html">Himachal Pradesh</a></li>
+                    <li><a href="Punjab.html">Punjab</a></li>
+                    <li><a href="Haryana.html">Haryana</a></li>
+                    <li><a href="Uttarakhand.html">Uttarakhand</a></li>
+                    <li><a href="Delhi">Delhi</a></li>
+                    <li><a href="Uttar Pradesh">Uttar Pradesh</a></li>
+                </ul>
+            </div>
+            <div class="state-category">
+                <h6 class="south">SOUTH</h6>
+                <ul>
+                    <li><a href="Tamil Nadu.html">Tamil Nadu</a></li>
+                    <li><a href="Kerala.html">Kerala</a></li>
+                    <li><a href="Karnataka.html">Karnataka</a></li>
+                    <li><a href="andhrapradesh.html">Andhra Pradesh</a></li>
+                    <li><a href="Telangana.html">Telangana</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
