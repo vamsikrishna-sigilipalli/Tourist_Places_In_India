@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Tourist Places</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .content i {
+            margin-right: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .grid-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .grid-item p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" loop autoplay muted>
+        <source src="images/india.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Delhi</h1>
+    </header>
+    <div class="content">
+        <h2><i class="fas fa-map-marker-alt"></i>Delhi</h2>
+        <div class="grid-container">
+            <div class="grid-item" onclick="window.location.href='India Gate.html'">
+                <img src="https://media.istockphoto.com/id/465111262/photo/india-gate.jpg?s=612x612&w=0&k=20&c=x6jHUPWYBizD835zEDtAjhuQuSP3_WMkXG3ELWf44lQ=" alt="India Gate">
+                <p>India Gate</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Qutub Minar.html'">
+                <img src="https://media.istockphoto.com/id/1160975059/photo/qutub-minar-and-its-monuments-delhi.jpg?s=612x612&w=0&k=20&c=nCQpmVYsfFYpMg8i-6kQkuHfQ9P-5IXGxyADVItiD_k=" alt="Qutub Minar">
+                <p>Qutub Minar</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Red Fort.html'">
+                <img src="https://images3.alphacoders.com/116/thumb-1920-1167248.jpg" alt="Red Fort">
+                <p>Red Fort</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href=' Lotus Temple.html'">
+                <img src="https://media.istockphoto.com/id/1025309296/photo/lotus-temple.jpg?s=612x612&w=0&k=20&c=XFu6NsatUggUUcQXcjX8qyXtCfjbvcDtdFEXo-3KWys=" alt=" Lotus Temple ">
+                <p> Lotus Temple</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Humayun’s Tomb.html'">
+                <img src="https://media.istockphoto.com/id/532703419/photo/humayuns-tomb-delhi-india.jpg?s=612x612&w=0&k=20&c=xLOQ5pzw0NJ-TSjhCmDViCygbE92coHOQREtRaYEqyI=" alt="Humayun’s Tomb">
+                <p>Humayun’s Tomb</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Akshardham Temple .html'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Akshardham_Delhi.jpg" alt="Akshardham Temple">
+                <p>Akshardham Temple</p>
+            </div>
+        </div>
+        <a class="back-button" href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+</body>
+</html>

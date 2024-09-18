@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttar Pradesh Tourist Places</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .content i {
+            margin-right: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .grid-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .grid-item p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" loop autoplay muted>
+        <source src="images/india.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Uttar Pradesh</h1>
+    </header>
+    <div class="content">
+        <h2><i class="fas fa-map-marker-alt"></i>Uttar Pradesh</h2>
+        <div class="grid-container">
+            <div class="grid-item" onclick="window.location.href='Varanasi.html'">
+                <img src="https://t4.ftcdn.net/jpg/04/08/25/05/360_F_408250543_MVaEVGeWxb4FiFy7mEGKj8nfYkwoAZON.jpg" alt="Varanasi">
+                <p>Varanasi</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Agra.html'">
+                <img src="https://images.pexels.com/photos/602607/pexels-photo-602607.png?cs=srgb&dl=pexels-roney-john-171488-602607.jpg&fm=jpg" alt="Agra">
+                <p>Agra</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Lucknow.html'">
+                <img src="https://static.toiimg.com/img/103890956/Master.jpg" alt="Lucknow">
+                <p>Lucknow</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Mathura-Vrindavan.html'">
+                <img src="https://cdn.pixabay.com/photo/2020/01/21/08/11/indian-temple-4782312_1280.jpg" alt=" Mathura-Vrindavan ">
+                <p> Mathura-Vrindavan</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Sarnath.html'">
+                <img src="https://media.istockphoto.com/id/539021864/photo/dhamekh-stupa.jpg?s=612x612&w=0&k=20&c=SkdNJcR4zCNIsBC6kDFoLpAe7y1KGC-7BlsSh1b3mWk=" alt="Sarnath">
+                <p>Sarnath</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Triveni Sangam. .html'">
+                <img src="https://t3.ftcdn.net/jpg/04/78/79/92/360_F_478799213_T1yr9BitehcMD7QQkEe5g4fBkTdIk75P.jpg" alt="Triveni Sangam.">
+                <p>Triveni Sangam.</p>
+            </div>
+        </div>
+        <a class="back-button" href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+</body>
+</html>
