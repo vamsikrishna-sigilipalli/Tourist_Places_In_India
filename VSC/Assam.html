@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assam Tourist Places</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .content i {
+            margin-right: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .grid-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .grid-item p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" loop autoplay muted>
+        <source src="images/india.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Assam</h1>
+    </header>
+    <div class="content">
+        <h2><i class="fas fa-map-marker-alt"></i>Assam</h2>
+        <div class="grid-container">
+            <div class="grid-item" onclick="window.location.href='Kaziranga National Park.html'">
+                <img src="https://i0.wp.com/nenow.in/wp-content/uploads/2019/10/3-9.jpg?fit=1030%2C686&ssl=1" alt="Kaziranga National Park">
+                <p>Kaziranga National Park</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Majuli.html'">
+                <img src="https://3.bp.blogspot.com/-bz5ROt2neCo/UtqaLUdsPwI/AAAAAAAAXeY/rNcF7B9NMqQ/s1600-rw/18.jpg" alt="Majuli ">
+                <p>Majuli</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Guwahati.html'">
+                <img src="https://pyt-blogs.imgix.net/2020/05/boudhayan-bardhan-VNlwWP-sy1A-unsplash-scaled.jpg?auto=format&ixlib=php-3.3.0" alt="Guwahati">
+                <p>Guwahati</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Sivasagar.html'">
+                <img src="https://media.assettype.com/sentinelassam-english%2F2024-01%2Fcb06ef66-aad6-41a3-ab5e-4163d809a8dc%2F9710367_orig.jpg" alt="Sivasagar">
+                <p>Sivasagar</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Manas National Park.html'">
+                <img src="https://www.indiantempletour.com/wp-content/uploads/2023/04/Clouded-Leopard-Manas-National-Park-Photo-Alamy-scaled-1.jpg" alt="Manas National Park">
+                <p>Manas National Park</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='Haflong.html'">
+                <img src="https://www.konkan.me/wp-content/uploads/2024/05/1-Things-to-Do-in-Haflong.jpg" alt="Haflong">
+                <p>Haflong </p>
+            </div>
+        </div>
+        <a class="back-button" href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+</body>
+</html>
