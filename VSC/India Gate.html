@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Gate</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #fff7f7;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e6e2e2;
+            color: rgb(96, 64, 155);
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
+        }
+
+        .details {
+            width: 70%;
+        }
+
+        .details h2 {
+            font-size: 50px;
+            color: #3f51b5;
+            text-align: center;
+        }
+
+        .about-section {
+            margin-top: 5px;
+        }
+
+        .about-section h3 {
+            font-size: 30px;
+            color: #3f51b5;
+            margin-bottom: 10px;
+        }
+
+        .about-section p, .about-section ul {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #002984;
+        }
+
+        /* Style for the language button (only icon) */
+        .translate-btn {
+            background-color: transparent;
+            color: #3f51b5;
+            font-size: 30px;
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .translate-btn i {
+            margin-right: 0;
+        }
+
+        .translate-btn:hover {
+            color: #283593;
+        }
+
+        /* Adjust container to allow absolute positioning of the button */
+        body {
+            position: relative;
+        }
+
+    </style>
+    <!-- Google Translate Widget Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header>
+        <h1>INDIA GATE</h1>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/465111262/photo/india-gate.jpg?s=612x612&w=0&k=20&c=x6jHUPWYBizD835zEDtAjhuQuSP3_WMkXG3ELWf44lQ=" alt="India Gate">
+        </div>
+        <div class="details">
+            <h2></h2>
+            <div class="about-section">
+                <h3>About India Gate</h3>
+                <p>
+                    India Gate, located in New Delhi, is one of the most iconic landmarks in India. Designed by Sir Edwin Lutyens, it was inaugurated in 1931 as a memorial to the 70,000 soldiers of the British Indian Army who died in World War I and the Anglo-Afghan Wars. Standing at 42 meters tall, this monumental arch is made of red and yellow sandstone and granite, featuring intricate carvings and inscriptions. The structure symbolizes national pride and serves as a reminder of the sacrifices made by soldiers for their country.
+
+                    Surrounding the India Gate is a vast green park where families and tourists gather to enjoy picnics and leisurely walks. The area is especially vibrant in the evening, as the monument is beautifully illuminated, creating a picturesque scene. Additionally, the Amar Jawan Jyoti, a flame that honors the unknown soldiers, burns at the base of the arch, making it a significant site for commemorative events and national celebrations. India Gate not only represents India's history but also stands as a symbol of unity and resilience.
+                </p>
+                
+                <!-- Google Translate Icon-only Button -->
+                <div id="google_translate_element" class="translate-btn">
+                    <i class="fas fa-language"></i>
+                </div>
+
+            </div>
+            <a class="back-button" href="Delhi.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
+    </div>
+</body>
+</html>

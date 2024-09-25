@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humayun’s Tomb</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #fff7f7;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e6e2e2;
+            color: rgb(96, 64, 155);
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
+        }
+
+        .details {
+            width: 70%;
+        }
+
+        .details h2 {
+            font-size: 50px;
+            color: #3f51b5;
+            text-align: center;
+        }
+
+        .about-section {
+            margin-top: 5px;
+        }
+
+        .about-section h3 {
+            font-size: 30px;
+            color: #3f51b5;
+            margin-bottom: 10px;
+        }
+
+        .about-section p, .about-section ul {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #002984;
+        }
+
+        /* Style for the language button (only icon) */
+        .translate-btn {
+            background-color: transparent;
+            color: #3f51b5;
+            font-size: 30px;
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .translate-btn i {
+            margin-right: 0;
+        }
+
+        .translate-btn:hover {
+            color: #283593;
+        }
+
+        /* Adjust container to allow absolute positioning of the button */
+        body {
+            position: relative;
+        }
+
+    </style>
+    <!-- Google Translate Widget Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header>
+        <h1>HUMAYUN'S TOMB</h1>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/532703419/photo/humayuns-tomb-delhi-india.jpg?s=612x612&w=0&k=20&c=xLOQ5pzw0NJ-TSjhCmDViCygbE92coHOQREtRaYEqyI=" alt="Humayun’s Tomb">
+        </div>
+        <div class="details">
+            <h2></h2>
+            <div class="about-section">
+                <h3>About Humayun’s Tomb</h3>
+                <p>
+                    Humayun's Tomb, located in Delhi, India, is a stunning example of Mughal architecture and was commissioned in 1569 by Humayun's widow, Empress Bega Begum. It was the first garden tomb on the Indian subcontinent and set a precedent for subsequent Mughal architecture, influencing the design of later structures such as the Taj Mahal. The tomb is surrounded by a beautiful Persian-style garden, divided into four parts by pathways, symbolizing the four rivers of Paradise. The intricate marble and red sandstone work, along with the use of domes and arched entrances, highlight the artistic excellence of the era.
+
+                    The tomb is not only an architectural marvel but also holds significant historical importance. It houses the tomb of Humayun, the second Mughal Emperor, and several other members of the Mughal dynasty, making it a prominent site for understanding the history of the Mughal Empire. In 1993, Humayun's Tomb was designated a UNESCO World Heritage Site, recognized for its outstanding universal value and contribution to the cultural heritage of humanity. The restoration and preservation efforts undertaken at the site have helped maintain its grandeur and make it a popular tourist destination in Delhi.
+                </p>
+                
+                <!-- Google Translate Icon-only Button -->
+                <div id="google_translate_element" class="translate-btn">
+                    <i class="fas fa-language"></i>
+                </div>
+
+            </div>
+            <a class="back-button" href="Delhi.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
+    </div>
+</body>
+</html>

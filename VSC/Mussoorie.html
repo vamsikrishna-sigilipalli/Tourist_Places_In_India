@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mussoorie</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #fff7f7;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e6e2e2;
+            color: rgb(96, 64, 155);
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
+        }
+
+        .details {
+            width: 70%;
+        }
+
+        .details h2 {
+            font-size: 50px;
+            color: #3f51b5;
+            text-align: center;
+        }
+
+        .about-section {
+            margin-top: 5px;
+        }
+
+        .about-section h3 {
+            font-size: 30px;
+            color: #3f51b5;
+            margin-bottom: 10px;
+        }
+
+        .about-section p, .about-section ul {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #002984;
+        }
+
+        /* Style for the language button (only icon) */
+        .translate-btn {
+            background-color: transparent;
+            color: #3f51b5;
+            font-size: 30px;
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .translate-btn i {
+            margin-right: 0;
+        }
+
+        .translate-btn:hover {
+            color: #283593;
+        }
+
+        /* Adjust container to allow absolute positioning of the button */
+        body {
+            position: relative;
+        }
+
+    </style>
+    <!-- Google Translate Widget Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header>
+        <h1>MUSSOORIE</h1>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2020/04/Attraction-Mussoorie-Kampty-FAlls.jpg?fit=1000%2C667&ssl=1" alt="Mussoorie ">
+        </div>
+        <div class="details">
+            <h2></h2>
+            <div class="about-section">
+                <h3>About Mussoorie</h3>
+                <p>
+                    Mussoorie, often referred to as the "Queen of the Hills," is a picturesque hill station located in the northern Indian state of Uttarakhand. Nestled at an altitude of approximately 2,000 meters, it offers breathtaking views of the surrounding Himalayan ranges and lush green valleys. Founded in the early 19th century by the British, Mussoorie quickly became a popular summer retreat for colonial officials. The town is known for its pleasant climate, with temperatures rarely exceeding 25°C in summer, making it an ideal destination for travelers seeking respite from the heat of the plains.
+
+The main attractions in Mussoorie include the famous Mall Road, which is lined with shops, restaurants, and hotels, providing a vibrant atmosphere for visitors. Other notable sites include Kempty Falls, a beautiful waterfall perfect for picnics and swimming, and Gun Hill, which offers panoramic views of the Himalayas accessible via a cable car ride. Mussoorie is also a gateway to several trekking trails and nearby locations like Dhanaulti and Landour, enriching the experience for nature lovers and adventure enthusiasts. With its rich colonial history, scenic beauty, and diverse recreational opportunities, Mussoorie remains a beloved destination for both domestic and international tourists.
+                </p>
+                
+                <!-- Google Translate Icon-only Button -->
+                <div id="google_translate_element" class="translate-btn">
+                    <i class="fas fa-language"></i>
+                </div>
+
+            </div>
+            <a class="back-button" href="Uttarakhand.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
+    </div>
+</body>
+</html>

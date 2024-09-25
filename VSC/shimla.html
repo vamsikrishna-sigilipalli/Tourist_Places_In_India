@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shimla</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #fff7f7;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e6e2e2;
+            color: rgb(96, 64, 155);
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
+        }
+
+        .details {
+            width: 70%;
+        }
+
+        .details h2 {
+            font-size: 50px;
+            color: #3f51b5;
+            text-align: center;
+        }
+
+        .about-section {
+            margin-top: 5px;
+        }
+
+        .about-section h3 {
+            font-size: 30px;
+            color: #3f51b5;
+            margin-bottom: 10px;
+        }
+
+        .about-section p, .about-section ul {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #002984;
+        }
+
+        /* Style for the language button (only icon) */
+        .translate-btn {
+            background-color: transparent;
+            color: #3f51b5;
+            font-size: 30px;
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .translate-btn i {
+            margin-right: 0;
+        }
+
+        .translate-btn:hover {
+            color: #283593;
+        }
+
+        /* Adjust container to allow absolute positioning of the button */
+        body {
+            position: relative;
+        }
+
+    </style>
+    <!-- Google Translate Widget Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header>
+        <h1>SHIMLA</h1>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/1223612773/photo/the-kalka-to-shimla-railway-is-a-2-ft-6-in-narrow-gauge-railway-in-north-india-which.jpg?s=612x612&w=0&k=20&c=vYxFBTbvcLcivcYjtFB-S_P7ETUwgIj0mAk84l9uC1g=" alt="shimla">
+        </div>
+        <div class="details">
+            <h2></h2>
+            <div class="about-section">
+                <h3>About shimla</h3>
+                <p>
+                    Shimla, the capital of Himachal Pradesh, is one of India's most famous hill stations. Known for its scenic beauty, colonial architecture, and pleasant weather, Shimla attracts visitors year-round. The Mall Road is the main hub for shopping, dining, and entertainment, while the Ridge offers panoramic views of the surrounding mountains. The Viceregal Lodge, now the Indian Institute of Advanced Study, is a stunning example of British colonial architecture and holds historical significance.
+
+Additionally, Shimla offers access to outdoor activities like trekking and skiing in nearby Kufri. Jakhoo Temple, located on Jakhoo Hill, is dedicated to Lord Hanuman and provides a serene spiritual experience along with breathtaking views. The lush green valleys, tall pine trees, and snow-capped peaks make Shimla an ideal retreat for nature lovers and adventure enthusiasts alike.
+                </p>
+                
+                <!-- Google Translate Icon-only Button -->
+                <div id="google_translate_element" class="translate-btn">
+                    <i class="fas fa-language"></i>
+                </div>
+
+            </div>
+            <a class="back-button" href="Himachal Pradesh.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
+    </div>
+</body>
+</html>

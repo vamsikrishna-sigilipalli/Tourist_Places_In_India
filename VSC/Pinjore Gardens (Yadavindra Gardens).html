@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinjore Gardens </title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #fff7f7;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e6e2e2;
+            color: rgb(96, 64, 155);
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
+        }
+
+        .details {
+            width: 70%;
+        }
+
+        .details h2 {
+            font-size: 50px;
+            color: #3f51b5;
+            text-align: center;
+        }
+
+        .about-section {
+            margin-top: 5px;
+        }
+
+        .about-section h3 {
+            font-size: 30px;
+            color: #3f51b5;
+            margin-bottom: 10px;
+        }
+
+        .about-section p, .about-section ul {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .back-button {
+            color: blue;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            color: #002984;
+        }
+
+        /* Style for the language button (only icon) */
+        .translate-btn {
+            background-color: transparent;
+            color: #3f51b5;
+            font-size: 30px;
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .translate-btn i {
+            margin-right: 0;
+        }
+
+        .translate-btn:hover {
+            color: #283593;
+        }
+
+        /* Adjust container to allow absolute positioning of the button */
+        body {
+            position: relative;
+        }
+
+    </style>
+    <!-- Google Translate Widget Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header>
+        <h1>PINJORE GARDENS</h1>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="https://www.explorencr.com/wp-content/uploads/2022/09/Pinjore-Garden.png" alt="Pinjore Gardens (Yadavindra Gardens)">
+        </div>
+        <div class="details">
+            <h2></h2>
+            <div class="about-section">
+                <h3>About Pinjore Gardens(Yadavindra Gardens)</h3>
+                <p>
+                    Pinjore Gardens, also known as Yadavindra Gardens, is a historic garden located in Pinjore, Haryana, India. Spanning over 100 acres, the garden showcases the Mughal architectural style and was constructed in the 17th century under the patronage of the Mughal rulers. It is characterized by its terraced levels, vibrant flowerbeds, and ornamental fountains that create a picturesque landscape. The gardens are designed in a typical Mughal layout, featuring a series of ascending terraces that lead to a central water channel adorned with fountains, reflecting the grandeur of Mughal aesthetics.
+
+                    The gardens also house several notable structures, including the historic Pinjore Palace, which adds to the site's cultural significance. Visitors can explore the lush greenery, numerous species of plants, and seasonal blooms, making it a popular destination for tourists and locals alike. Pinjore Gardens hosts various cultural events and festivals, attracting art enthusiasts and families seeking a serene environment. The gardens' tranquil ambiance, combined with its rich history and stunning architecture, make it a must-visit site for anyone exploring the region.
+                </p>
+                
+                <!-- Google Translate Icon-only Button -->
+                <div id="google_translate_element" class="translate-btn">
+                    <i class="fas fa-language"></i>
+                </div>
+
+            </div>
+            <a class="back-button" href="Haryana.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
+    </div>
+</body>
+</html>
